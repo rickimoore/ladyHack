@@ -1,8 +1,7 @@
 import Vue from 'vue';
 import VueResource from 'vue-resource';
 import VueRouter from 'vue-router';
-import Navigation from 'components/Navigation/navigation';
-import Loader from 'components/Loader/Loader';
+import Navigation from 'components/Elements/Navigation/Navigation.vue';
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
@@ -22,7 +21,6 @@ export const App = new Vue({
   router,
   components: {
     Navigation,
-    Loader
   },
 
   data(){

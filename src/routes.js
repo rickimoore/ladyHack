@@ -1,25 +1,14 @@
-import Home from 'components/Home/home';
-import Posts from 'components/Posts/posts';
-import Post from 'components/Posts/post';
-import NotFound from 'components/NotFound/notFound';
+import Landing from 'components/Views/Landing.vue';
+import Register from 'components/Views/Register.vue';
 
 const routes = [
   {
     path: '/',
-    component: Home
+    component: Landing
   },
   {
-    path: '/posts',
-    component: Posts
-  },
-  {
-    path: '/post/:id',
-    name: 'post',
-    component: Post
-  },
-  {
-    path: '*',
-    component: NotFound
+    path: '/register',
+    component: Register
   }
 ];
 

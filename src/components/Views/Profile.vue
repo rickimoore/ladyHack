@@ -5,7 +5,7 @@
                 <div class="profile-image"></div>
                 <div class="profile-meta">
                     <div class="profile-peta">
-                        <span class="profile-name">Jane Doe</span>
+                        <span class="profile-name">Marta Alejandra Gonzalez</span>
                         <button>Edit profile</button>
                     </div>
                     <div class="profile-subtitle">

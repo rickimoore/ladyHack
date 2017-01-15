@@ -145,6 +145,7 @@ section {
 }
 
 .profile-box {
+    position: relative;
     color: $gray-light;
 
     > div:not(:first-of-type) {
@@ -157,6 +158,12 @@ section {
         width: 1rem;
         margin-right: 1rem;
         color: $primary;
+    }
+
+    h4 {
+        position: absolute;
+        top: -2rem;
+        left: .5rem;
     }
 }
 
@@ -174,3 +181,19 @@ section {
         margin-left: 2.5rem;
     }
 }
+
+.tickets {
+    > div {
+        display: flex;
+        align-items: center;
+    }
+
+    .eventText {
+        flex: 1;
+    }
+
+    .ticket {
+        text-decoration: underline;
+    }
+}
+

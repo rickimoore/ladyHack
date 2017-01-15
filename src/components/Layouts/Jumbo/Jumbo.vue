@@ -1,7 +1,7 @@
 <template>
     <div class="jumbo container">
         <div class="jumbo--screen">
-            <img class="screen" src="src/assets/images/stock/stock-jumbo.jpg" alt="laughing image">
+            <img class="screen" src="src/assets/images/stock/stock-event.jpg" alt="laughing image">
             <div class="jumbo--actions">
                 <h1 class="action--callout">
                     Compound is bridging the gap between<br>young professionals and<br>helping them pursue their passions.

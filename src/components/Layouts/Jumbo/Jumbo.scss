@@ -7,11 +7,14 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+    background-position: center top;
+
     .action--callout{
       margin-bottom: 5%;
       text-align: right;
       font-size: 32px;
-      color: #2E4556;
+      color: #fff;
       .action--btn:hover{
         background: darken(#65cccc, 50%);
       }
@@ -36,6 +39,9 @@
     .screen{
       width: 100%;
       position: absolute;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
     }
   }
 }

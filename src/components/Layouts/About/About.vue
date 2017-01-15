@@ -8,11 +8,11 @@
                 <ul class="about--attributes">
                     <li>
                         <i class="fa fa-connectdevelop fa-lg"></i>
-                        <p>Connect Young Professionals to real job opportunities</p>
+                        <p>Connect Young Professionals to real<br>job opportunities</p>
                     </li>
                     <li>
                         <i class="fa fa-life-ring fa-lg"></i>
-                        <p>Provide guidance and mentorship to young women who need support</p>
+                        <p>Provide guidance and mentorship to<br>young women who need support</p>
                     </li>
                     <li>
                         <i class="fa fa-calendar fa-lg"></i>

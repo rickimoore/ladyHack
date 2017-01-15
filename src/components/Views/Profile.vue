@@ -29,9 +29,10 @@
             </div>
         </section>
         <section class="profile-box">
+            <h4>Info</h4>
             <div>
                 <i class="fa fa-cog fa-lg"></i>
-                <span>Interested in UX Design, UX Research, Visual/UI Design roles</span>
+                <span>Interested in Digital Marketing, User Research, Visual/UI Design roles</span>
             </div>
             <div class="location">
                 <i class="fa fa-map-pin fa-lg"></i>
@@ -42,14 +43,17 @@
                 <span>2. Madrid, Spain</span>
             </div>
         </section>
-        <section class="profile-box">
+        <section class="profile-box tickets">
+            <h4>Events</h4>
             <div>
                 <i class="fa fa-calendar fa-lg"></i>
-                <span>Sustainability Jam, March 15</span>
+                <span class="eventText">Sustainability Jam, March 15</span>
+                <span class="ticket">Download ticket</span>
             </div>
             <div class="location">
                 <i class="fa fa-calendar fa-lg"></i>
-                <span>Meet you mentor, February 21</span>
+                <span class="eventText">Meet you mentor, February 21</span>
+                <span class="ticket">Download ticket</span>
             </div>
         </section>
     </main>

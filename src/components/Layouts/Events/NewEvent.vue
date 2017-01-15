@@ -25,7 +25,7 @@
                 <div class="carousel-content" role="listbox">
                     <div class="item active">
                         <div class="card--overlay"></div>
-                        <img class="background" src="src/assets/images/stock/stock-event.jpg" alt="new event">
+                        <img class="background" src="src/assets/images/stock/boy.jpg" alt="new event">
                         <div class="update--callout">
                             <img class="icon" src="src/assets/images/dates.svg" alt="dates">
                             <span class="title">Sustainability Jam</span>
@@ -37,7 +37,7 @@
                     </div>
                     <div class="item">
                         <div class="card--overlay"></div>
-                        <img src="src/assets/images/stock/stock-sponsor.jpg" alt="">
+                        <img class="background" src="src/assets/images/stock/stock-jumbo.jpg" alt="">
                         <div class="update--callout">
                             <img class="icon" src="src/assets/images/dates.svg" alt="dates">
                             <span class="title">Meet Your Mentor</span>
@@ -49,7 +49,7 @@
                     </div>
                     <div class="item">
                         <div class="card--overlay"></div>
-                        <img src="src/assets/images/stock/stock-2.jpg" alt="">
+                        <img class="background" src="src/assets/images/stock/stock-2.jpg" alt="">
                         <div class="update--callout">
                             <img class="icon" src="src/assets/images/dates.svg" alt="dates">
                             <span class="title">2017 Fashion Design <br> Challenge</span>

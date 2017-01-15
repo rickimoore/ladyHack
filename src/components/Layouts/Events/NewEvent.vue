@@ -30,7 +30,7 @@
                             <img class="icon" src="src/assets/images/dates.svg" alt="dates">
                             <span class="title">Sustainability Jam</span>
                             <span class="second-title">19th Janurary, 2017</span>
-                            <button @click="togglePopup(true, 'Sustainability Jam')">
+                            <button class="secondary" @click="togglePopup(true, 'Sustainability Jam')">
                                 <span>Attend The Event</span>
                             </button>
                         </div>
@@ -40,8 +40,11 @@
                         <img src="src/assets/images/stock/stock-sponsor.jpg" alt="">
                         <div class="update--callout">
                             <img class="icon" src="src/assets/images/dates.svg" alt="dates">
-                            <span class="title">Meet The Sponsors</span>
+                            <span class="title">Meet Your Mentor</span>
                             <span class="second-title">17th February, 2017</span>
+                            <button class="secondary" @click="togglePopup(true, 'Meet Your Mentor')">
+                                <span>Attend the event</span>
+                            </button>
                         </div>
                     </div>
                     <div class="item">
@@ -51,6 +54,9 @@
                             <img class="icon" src="src/assets/images/dates.svg" alt="dates">
                             <span class="title">2017 Fashion Design <br> Challenge</span>
                             <span class="second-title">28th Janurary, 2017</span>
+                            <button class="secondary" @click="togglePopup(true, '2017 Fashion Design Challenge')">
+                                <span>Attend The Event</span>
+                            </button>
                         </div>
                     </div>
                 </div>

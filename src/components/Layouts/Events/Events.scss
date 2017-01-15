@@ -15,7 +15,7 @@
     opacity: .8;
   }
   .modal{
-    width: 40%;
+    width: 60%;
     height: 500px;
     position: absolute;
     top: 50%;
@@ -26,14 +26,21 @@
     margin-right: auto;
     background: $primary;
     z-index: 99;
-    padding: 1% 2% 1% 2%;
+    padding: 15px;
+    border-radius: 4px;
     .whiteBoard{
+      overflow: hidden;
       @include cover();
       background: white;
       img{
         width: 100%;
+        transform: translateY(-27%);
       }
       .message{
+        > * + * {
+          margin-top: 2rem;
+        }
+
         position: absolute;
         bottom: 50px;
         left: 0;
@@ -123,10 +130,11 @@
     }
     .update--callout{
       position: absolute;
-      top: 40%;
+      top: 50%;
       left: 0;
       right: 0;
       margin: 0 auto;
+      transform: translateY(-50%);
       text-align: center;
       z-index: 99;
       @include flex();
@@ -141,6 +149,7 @@
         margin: auto;
       }
       button{
+        margin-top: 2rem;
         max-width: 250px;
       }
       .title, .second-title{
@@ -153,7 +162,6 @@
     }
     .background{
       position: absolute;
-      top: -200px;
       left: 0;
       width: 100%;
     }

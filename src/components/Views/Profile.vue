@@ -45,11 +45,11 @@
         <section class="profile-box">
             <div>
                 <i class="fa fa-calendar fa-lg"></i>
-                <span>Interested in UX Design, UX Research, Visual/UI Design roles</span>
+                <span>Sustainability Jam, March 15</span>
             </div>
             <div class="location">
-                <i class="fa fa-question fa-lg"></i>
-                <span>Willing to work in or near the following areas:</span>
+                <i class="fa fa-calendar fa-lg"></i>
+                <span>Meet you mentor, February 21</span>
             </div>
         </section>
     </main>

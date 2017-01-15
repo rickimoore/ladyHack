@@ -1,9 +1,12 @@
 .checkbox {
     display: inline-block;
-    border: 1px solid black;
+    padding: .5rem 1rem;
     user-select: none;
+    background: #fff;
+    text-align: center;
 }
 
 .is-checked {
-    background: tomato;
+    color: #fff;
+    background: #71adad;
 }

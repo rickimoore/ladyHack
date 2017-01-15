@@ -35,7 +35,7 @@
             <router-link v-if="thisRoute == '/register'" class="nav-item" tag="li" to="/register" exact>
                 <a class="nav-link">SETTINGS</a>
             </router-link>
-            <template v-if="thisRoute == '/dashboard' || thisRoute == '/register'">
+            <template v-if="thisRoute == '/dashboard' || thisRoute == '/register' || thisRoute == '/profile'">
                 <router-link class="nav-item special--item-reverse" tag="li" to="/" exact>
                     <a class="nav-link">
                         <span>SIGN OUT</span>

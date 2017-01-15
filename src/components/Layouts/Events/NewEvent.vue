@@ -10,7 +10,9 @@
                             <div class="message">
                                 <h1>You have Successfully Registered for <br> {{eventName}}</h1>
                                 <span>Collect Your Ticket Here!</span>
-                                <button>Go To My Tickets</button>
+                                <router-link class="nav-item" to="/profile" exact>
+                                    <button>Go To My Tickets</button>
+                                </router-link>
                             </div>
                         </div>
                     </div>

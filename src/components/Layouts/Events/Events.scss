@@ -45,7 +45,7 @@
         justify-content: center;
         align-items: center;
         button{
-          max-width: 150px;
+          max-width: 200px;
         }
       }
     }
@@ -131,12 +131,17 @@
       z-index: 99;
       @include flex();
       @include flex-column();
+      justify-content: center;
+      align-items: center;
       .icon{
         width: 100px;
         position: relative;
         left: 0;
         right: 0;
         margin: auto;
+      }
+      button{
+        max-width: 250px;
       }
       .title, .second-title{
         color: white!important;

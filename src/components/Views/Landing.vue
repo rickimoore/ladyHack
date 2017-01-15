@@ -1,17 +1,19 @@
 <template>
     <div id="landing">
-        <h1>This is the Landing Page</h1>
-        <posts></posts>
+        <jumbo></jumbo>
+        <event-list></event-list>
+        <blog-posts></blog-posts>
+        <about></about>
     </div>
 </template>
 <script>
-    import posts from '../Layouts/Posts.vue';
+    import jumbo from '../Layouts/Jumbo/Jumbo.vue';
+    import eventList from '../Layouts/Events/Events.vue';
+    import blogPosts from '../Layouts/Posts/Posts.vue';
+    import about from '../Layouts/About/About.vue';
     export default{
-        mounted(){
-            console.log('working correctly');
-        },
         components: {
-            posts
+            jumbo, eventList, blogPosts, about
         }
     }
 </script>

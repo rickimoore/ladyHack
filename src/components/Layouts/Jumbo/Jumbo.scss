@@ -1,0 +1,33 @@
+.jumbo{
+  padding: 2%;
+  width: 100%;
+  margin-bottom: 5%;
+  .jumbo--screen{
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    .action--callout{
+      margin-bottom: 5%;
+      text-align: right;
+      font-size: 32px;
+      color: #2E4556;
+      .action--btn:hover{
+        background: darken(#65cccc, 50%);
+      }
+    }
+    .jumbo--actions{
+      position: absolute;
+      top: 40%;
+      left: 10%;
+      z-index: 99;
+      .action--btn{
+        color: inherit;
+      }
+    }
+    .screen{
+      width: 100%;
+      position: absolute;
+    }
+  }
+}

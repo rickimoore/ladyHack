@@ -1,14 +1,25 @@
 <template>
     <nav class="navbar fixed-top navbar-toggleable-sm navbar-inverse bg-inverse">
         <router-link class="navbar-brand" to="/">
-            <img alt="Brand" src="~assets/images/logo.png" height="20">
+            <span>COMPOUND</span>
         </router-link>
         <ul class="navbar-nav">
             <router-link class="nav-item" tag="li" to="/" exact>
-                <a class="nav-link"><i class="fa fa-home"></i> Home</a>
+                <a class="nav-link">TALENT</a>
             </router-link>
             <router-link class="nav-item" tag="li" to="/register" exact>
-                <a class="nav-link"><i class="fa fa-file-text-o"></i> Posts</a>
+                <a class="nav-link">EMPLOYERS</a>
+            </router-link>
+            <router-link class="nav-item" tag="li" to="/" exact>
+                <a class="nav-link">ABOUT</a>
+            </router-link>
+            <router-link class="nav-item" tag="li" to="/register" exact>
+                <a class="nav-link">HOME</a>
+            </router-link>
+            <router-link class="nav-item special--item" tag="li" to="/register" exact>
+                <a class="nav-link">
+                    <span>SIGNUP</span>
+                </a>
             </router-link>
         </ul>
     </nav>

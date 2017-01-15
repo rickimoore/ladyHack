@@ -8,12 +8,19 @@
 // Project specific
 @import "styles/global";
 
+@import "components/Elements/Navigation/Navbar.scss";
 @import "components/Elements/Checkbox/checkbox.scss";
 @import "components/Elements/Button/button.scss";
 @import "components/Elements/Post/Post.scss";
+@import "components/Elements/Event/event.scss";
+@import "components/Elements/Footer/footer.scss";
 
 //Project Layouts
-@import "components/Layouts/Posts.scss";
+@import "components/Layouts/Jumbo/Jumbo.scss";
+@import "components/Layouts/Posts/Posts";
+@import "components/Layouts/Events/Events";
+@import "components/Layouts/About/about";
+
 
 //@import "components/Elements/Button/button.scss";
 

@@ -1,0 +1,10 @@
+.event{
+  width: 44%;
+  @include card(3);
+}
+.event--image{
+  width: 100%;
+  img{
+    width: 100%;
+  }
+}

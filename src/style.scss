@@ -1,4 +1,6 @@
 @import "styles/variables";
+@import "styles/mixins/material-card";
+@import "styles/mixins/mixins";
 
 // npm depencies
 @import "~font-awesome/scss/font-awesome";
@@ -8,4 +10,11 @@
 
 @import "components/Elements/Checkbox/checkbox.scss";
 @import "components/Elements/Button/button.scss";
+@import "components/Elements/Post/Post.scss";
+
+//Project Layouts
+@import "components/Layouts/Posts.scss";
+
+//@import "components/Elements/Button/button.scss";
+
 @import "components/Views/views.scss";

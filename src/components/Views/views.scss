@@ -1,3 +1,9 @@
+.register{
+    background: $body-bg;
+}
+#app, #landing, .content{
+    @include cover();
+}
 section {
     margin: 0 auto;
     max-width: 650px;

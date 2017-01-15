@@ -1,0 +1,16 @@
+.blog-post{
+  @include flex();
+  @include flex-center();
+  .post--header{
+    width: 100%;
+    text-align: center;
+    color: $primary;
+  }
+}
+.posts{
+  width: 100%;
+  padding: 0 50px;
+  @include flex();
+  @include flex-row(nowrap);
+  justify-content: space-around;
+}

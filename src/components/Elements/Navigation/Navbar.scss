@@ -26,6 +26,19 @@
     padding-bottom: .3rem;
     .nav-link{
       letter-spacing: 5px;
+      position: relative;
+      .red-dot{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: red;
+        right: -10px;
+        bottom: 50%;
+        margin-bottom: -5px;
+        border-radius: 50%;
+        text-align: center;
+        color: white!important;
+      }
     }
     .special--item{
       padding: 1.35rem 1.75rem;

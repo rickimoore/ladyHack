@@ -29,7 +29,7 @@
                     <a class="nav-link">BLOG</a>
                 </router-link>
                 <router-link class="nav-item" tag="li" to="/register" exact>
-                    <a class="nav-link">SETTINGS</a>
+                    <a class="nav-link">MESSAGES <span class="red-dot"></span></a>
                 </router-link>
             </template>
             <router-link v-if="thisRoute == '/register'" class="nav-item" tag="li" to="/register" exact>

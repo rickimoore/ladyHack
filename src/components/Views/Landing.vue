@@ -1,5 +1,5 @@
 <template>
-    <div class="#landing">
+    <div id="landing">
         <h1>This is the Landing Page</h1>
         <posts></posts>
     </div>

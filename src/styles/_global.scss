@@ -12,9 +12,8 @@ html {
 }
 
 body {
-    padding-top: 5rem;
+    @include cover();
     font-family: 'Futura', Helvetica, sans-serif;
-    background: $body-bg;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -1,6 +1,12 @@
 <template>
-    <div class="posts">
-        <post v-for="post in posts" :title="post.title" :description="post.description" :image="post.image"></post>
+    <div class="blog-post">
+        <div class="post--header">
+            <h1>CHECK OUT OUR BLOG</h1>
+            <h2>GET ADVICE, MENTORSHIP, AND MORE!</h2>
+        </div>
+        <div class="post--component posts">
+            <post v-for="(post, index) in posts" :title="post.title" :description="post.description" :image="post.image"></post>
+        </div>
     </div>
 </template>
 <script>
@@ -8,6 +14,7 @@
     export default{
         data: function () {
           return {
+              activeIndex: '',
               posts: [
                   {
                       title: 'Strategic Planning Made Easy',

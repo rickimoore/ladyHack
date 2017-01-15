@@ -1,7 +1,5 @@
 <template>
-    <button>
-        <span>poop</span>
-    </button>
+    <button></button>
 </template>
 <script>
     export default{

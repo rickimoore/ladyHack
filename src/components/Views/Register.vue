@@ -24,10 +24,24 @@
                 <checkbox v-for="(check, index) in checkboxesFive" :label="check"></checkbox>
             </div>
         </section>
+        <section>
+            <div>
+                <input type="text" v-model="tagInput" @keyup.enter="addTag">
+                <div class="tags" v-show="tags.length > 0">
+                    <span class="tag" v-for="(tag, index) in tags">{{tag}}</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="next">
+                <button>next</button>
+            </div>
+        </section>
     </main>
 </template>
 <script>
     import checkbox from '../Elements/Checkbox/checkbox.vue';
+    import button from '../Elements/Button/button.vue';
     export default{
         mounted(){
             console.log('this is the register page');
@@ -39,10 +53,18 @@
                 checkboxesThree: ['Marketing', 'Finance', 'Other'],
                 checkboxesFour: ['Full time', 'Contract', 'Part time', 'Intern'],
                 checkboxesFive: ['SEO', 'Social Media', 'Copy Writer', 'Analyst'],
+                tagInput: '',
+                tags: []
+            }
+        },
+        methods: {
+            addTag: function () {
+                this.tags.push(this.tagInput);
+                this.tagInput = '';
             }
         },
         components: {
-            checkbox
+            checkbox, button
         }
     }
 </script>

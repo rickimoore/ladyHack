@@ -1,0 +1,31 @@
+button {
+    display: inline;
+    position: relative;
+    padding: 1rem 1.5rem;
+
+    border-radius: 4px;
+    border: none;
+    border-bottom: 3px solid #85d6d6;
+    outline: 0;
+
+    background-color: #65cccc;
+
+    color: #fff;
+    font-size: inherit;
+    font-weight: 700;
+    letter-spacing: .05em;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-font-smoothing: auto;
+
+    user-select: none;
+    cursor: pointer;
+
+    &:active {
+        border: none;
+    }
+}

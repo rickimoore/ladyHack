@@ -1,6 +1,6 @@
 section {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 650px;
 
     & + & {
         margin-top: 3.5rem;
@@ -28,4 +28,29 @@ section {
 
 .next {
     text-align: right;
+}
+
+.tags-container {
+    display: flex;
+    margin-top: 1rem;
+
+    > * + * {
+        margin-left: 1rem;
+    }
+}
+
+.tags {
+    margin-top: .65rem;
+}
+
+.tag {
+    display: inline-block;
+    background: #71adad;
+    padding: .5rem 1.5rem;
+    border-radius: 4px;
+    color: #fff;
+
+    & + & {
+        margin-left: .65rem;
+    }
 }

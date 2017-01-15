@@ -22,3 +22,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
+input[type="text"] {
+    flex: 1;
+    border: 1px solid $primary;
+    padding: .5rem 1rem;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}

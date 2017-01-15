@@ -25,8 +25,12 @@
             </div>
         </section>
         <section>
+            <h4>Add up to five skills by entering them below.</h4>
             <div>
-                <input type="text" v-model="tagInput" @keyup.enter="addTag">
+                <div class="tags-container">
+                    <input type="text" v-model="tagInput" @keyup.enter="addTag">
+                    <button>Add</button>
+                </div>
                 <div class="tags" v-show="tags.length > 0">
                     <span class="tag" v-for="(tag, index) in tags">{{tag}}</span>
                 </div>
@@ -34,7 +38,9 @@
         </section>
         <section>
             <div class="next">
-                <button>next</button>
+                <router-link to="/dashboard" exact>
+                    <button>next</button>
+                </router-link>
             </div>
         </section>
     </main>

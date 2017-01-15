@@ -1,5 +1,6 @@
 import Landing from 'components/Views/Landing.vue';
 import Register from 'components/Views/Register.vue';
+import Dashboard from 'components/Views/Dashboard.vue';
 
 const routes = [
   {
@@ -9,6 +10,10 @@ const routes = [
   {
     path: '/register',
     component: Register
+  },
+  {
+    path: '/dashboard',
+    component: Dashboard
   }
 ];
 

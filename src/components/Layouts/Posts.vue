@@ -12,17 +12,17 @@
                   {
                       title: 'Strategic Planning Made Easy',
                       description: 'Lorem ipsum dolor sit amet, vim enim mollis cu, eu dolores vivendum tractatos duo. Tantas ocurreret',
-                      image: '/images/stock/stock-1.jpg'
+                      image: 'src/assets/images/stock/stock-2.jpg'
                   },
                   {
                       title: 'How To Be Effecient In An Interview',
                       description: 'Lorem ipsum dolor sit amet, vim enim mollis cu, eu dolores vivendum tractatos duo. Tantas ocurreret',
-                      image: '/images/stock/stock-2.jpg'
+                      image: 'src/assets/images/stock/stock-1.jpg'
                   },
                   {
                       title: 'Work Place Stress Relief',
                       description: 'Lorem ipsum dolor sit amet, vim enim mollis cu, eu dolores vivendum tractatos duo. Tantas ocurreret',
-                      image: '/images/stock/stock-1.jpg'
+                      image: 'src/assets/images/stock/stock-3.jpg'
                   }
               ]
           }

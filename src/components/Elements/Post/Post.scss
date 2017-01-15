@@ -1,0 +1,18 @@
+.post{
+  width: 31.33%;
+  flex-grow: 0;
+  @include flex();
+  @include flex-column();
+
+  .post--card{
+    @include flex();
+    @include flex-column();
+    @include card(3);
+    .card--image{
+      width: 100%;
+    }
+  }
+  .post--description{
+    margin-top: 5%;
+  }
+}

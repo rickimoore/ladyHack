@@ -1,7 +1,12 @@
 <template>
     <div class="post">
-        <h1>{{title}}</h1>
-        <p>{{description}}</p>
+        <div class="post--card">
+            <img class="card--image" :src="image" alt="post image">
+            <h1>{{title}}</h1>
+        </div>
+        <div class="post--description">
+            <p>{{description}}</p>
+        </div>
     </div>
 </template>
 <script>

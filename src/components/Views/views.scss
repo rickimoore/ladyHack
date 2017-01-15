@@ -54,3 +54,86 @@ section {
         margin-left: .65rem;
     }
 }
+
+.profile {
+    section {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+    }
+}
+
+.profile-info {
+    display: flex;
+    color: $gray-light;
+}
+
+.profile-image {
+    min-width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background-image: url('/src/assets/images/profile.png');
+    background-size: cover;
+}
+
+.profile-meta {
+    width: 100%;
+    margin-left: 2rem;
+}
+
+.profile-peta {
+    display: flex;
+    align-items: center;
+}
+
+.profile-name {
+    flex: 1;
+    font-size: 22px;
+    color: $gray-dark;
+}
+
+.profile-list {
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+}
+
+.profile-links {
+    margin-top: 2rem;
+    padding-top: 1.8rem;
+    padding-left: .5rem;
+    border-top: 1px solid #ccc;
+    color: $gray-light;
+
+    > * + * {
+        margin-left: 1.5rem;
+    }
+}
+
+.interests {
+
+    color: $gray-light;
+
+    > div:not(:first-of-type) {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    i {
+        width: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.location {
+    span {
+        margin-left: .3rem;
+    }
+}
+
+.cities {
+    padding-left: 2rem;
+    > * + * {
+        margin-left: 2rem;
+    }
+}

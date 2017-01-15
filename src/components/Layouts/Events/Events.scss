@@ -2,6 +2,56 @@
   margin-bottom: 10%;
   height: 70%;
 }
+.modal--container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  .modal--overlay{
+    @include fullscreen();
+    background: black;
+    opacity: .8;
+  }
+  .modal{
+    width: 40%;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: $primary;
+    z-index: 99;
+    padding: 1% 2% 1% 2%;
+    .whiteBoard{
+      @include cover();
+      background: white;
+      img{
+        width: 100%;
+      }
+      .message{
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        @include flex();
+        @include flex-column();
+        justify-content: center;
+        align-items: center;
+        button{
+          max-width: 150px;
+        }
+      }
+    }
+    @include transition(all, .6s);
+  }
+}
 .container, .event-container{
   position: relative;
 }
@@ -60,19 +110,20 @@
     .card--overlay{
       position: absolute;
       width: 100%;
-      height: 80%;
+      height: 100%;
       bottom: 0;
       left: 0;
-      opacity: .6;
+      opacity: .7;
       z-index: 99;
-      background: -webkit-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
-      background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
+      background: $primary;
+      //background: -webkit-linear-gradient(bottom, rgba(0,0,0,0), rgba(101,204,204,1)); /* For Safari 5.1 to 6.0 */
+      //background: -o-linear-gradient(bottom, rgba(0,0,0,0), rgba(101,204,204,1)); /* For Opera 11.1 to 12.0 */
+      //background: -moz-linear-gradient(bottom, rgba(0,0,0,0), rgba(101,204,204,1)); /* For Firefox 3.6 to 15 */
+      //background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(101,204,204,1)); /* Standard syntax (must be last) */
     }
     .update--callout{
       position: absolute;
-      top: 60%;
+      top: 40%;
       left: 0;
       right: 0;
       margin: 0 auto;
@@ -81,7 +132,7 @@
       @include flex();
       @include flex-column();
       .icon{
-        width: 50px;
+        width: 100px;
         position: relative;
         left: 0;
         right: 0;

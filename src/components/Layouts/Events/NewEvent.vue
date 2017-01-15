@@ -1,5 +1,22 @@
 <template>
     <div class="event--update">
+        <transition name="fade">
+            <div class="modal--container" v-show="isPopUp">
+                <div class="modal--overlay"></div>
+                <transition name="slideUp">
+                    <div class="modal" v-show="isModal">
+                        <div class="whiteBoard">
+                            <img src="src/assets/images/stock/checkgif.gif" alt="check gif">
+                            <div class="message">
+                                <h1>You have Successfully Registered for <br> {{eventName}}</h1>
+                                <span>Collect Your Ticket Here!</span>
+                                <button>Go To My Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </transition>
+            </div>
+        </transition>
         <div class="update">
             <div class="card--overlay"></div>
             <div id="myCarousel" class="carousel slide" data-interval="false">
@@ -11,6 +28,9 @@
                             <img class="icon" src="src/assets/images/dates.svg" alt="dates">
                             <span class="title">Sustainability Jam</span>
                             <span class="second-title">19th Janurary, 2017</span>
+                            <button @click="togglePopup(true, 'Sustainability Jam')">
+                                <span>Attend The Event</span>
+                            </button>
                         </div>
                     </div>
                     <div class="item">
@@ -45,6 +65,26 @@
 </template>
 <script>
     export default{
-
+        data: function () {
+            return {
+                timer: 0,
+                isPopUp: false,
+                isModal: false,
+                eventName: ''
+            }
+        },
+        methods: {
+            togglePopup: function (direction, $eventName) {
+                var self = this;
+                if(direction){
+                    this.isPopUp = true;
+                    this.eventName = $eventName;
+                    clearTimeout(this.timer);
+                    this.timer = setTimeout(function () {
+                        self.isModal = true;
+                    }, 500);
+                }
+            }
+        }
     }
 </script>

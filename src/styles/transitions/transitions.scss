@@ -1,0 +1,118 @@
+@import "../mixins/mixins";
+
+//vue 2.0 transitions
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .8s ease;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+
+
+//SlideIn with a jump-up
+
+.slideUp-enter-active, .slideUp-leave-active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slideUp-enter, .slideUp-leave-active{
+  @include transform(translateY(100%));
+  opacity: 0;
+}
+
+
+
+
+.fadeNo-transition{
+  transition: all .5s ease;
+  opacity: 1;
+}
+
+.fadeNo-enter{
+  opacity: 0;
+}
+
+.fadeNo-leave{
+ display: none;
+}
+
+
+//fadeIn with a jump-up
+
+.fadeUp-transition{
+  transition: all .8s ease 1s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.fadeUp-enter, .fadeUp-leave{
+  opacity: 0;
+  transform: translateY(25%);
+}
+
+//SlideIn with a jump-up
+
+.slideUp-transition{
+  transition: all .5s ease;
+  transform: translateY(0);
+}
+
+.slideUp-enter{
+  transform: translateY(100%);
+}
+
+.slideUp-leave{
+  display: none;
+}
+
+//twitter pop up
+
+.popup-enter-active, .popup-leave-active {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.popup-enter, .popup-leave-active {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+
+.sp{
+  -webkit-transition: all 1s ease;
+  -moz-transition:  all 1s ease;
+  -ms-transition:  all 1s ease;
+  -o-transition:  all 1s ease;
+  transition:  all 1s ease;
+}
+
+circle, path, polygon{
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.svg--icon{
+  transform: scale(.2) translateY(-150%);
+  -webkit-transition: transform 1.5s ease;
+  -moz-transition: transform 1.5s ease;
+  -ms-transition: transform 1.5s ease;
+  -o-transition: transform 1.5s ease;
+  transition: transform 1.5s ease;
+}
+
+.tran-1{
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}

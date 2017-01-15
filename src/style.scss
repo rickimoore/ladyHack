@@ -1,10 +1,10 @@
 @import "styles/variables";
 
 // npm depencies
-@import "~bootstrap/scss/bootstrap";
 @import "~font-awesome/scss/font-awesome";
 
 // Project specific
 @import "styles/global";
 
-@import "components/Elements/Checkbox/checkbox.scss"
+@import "components/Elements/Checkbox/checkbox.scss";
+@import "components/Views/views.scss";

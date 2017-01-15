@@ -1,7 +1,5 @@
 <template>
-    <div class="checkbox" @click="toggle">
-        <span :class="{'is-checked': isChecked}">{{label}}</span>
-    </div>
+    <div class="checkbox" @click="toggle" :class="{'is-checked': isChecked}">{{label}}</div>
 </template>
 <script>
     export default{

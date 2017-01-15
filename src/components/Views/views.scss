@@ -1,0 +1,27 @@
+section {
+    margin: 0 auto;
+    max-width: 800px;
+
+    & + & {
+        margin-top: 3.5rem;
+    }
+}
+
+.checkboxes {
+    > div {
+        display: flex;
+        margin-top: 1rem;
+
+        &:not(:first-of-type) {
+            margin-top: .5rem;
+        }
+
+        > * + * {
+            margin-left: .5rem;
+        }
+
+        > * {
+            flex: 1;
+        }
+    }
+}

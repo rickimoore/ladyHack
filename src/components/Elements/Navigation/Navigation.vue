@@ -4,23 +4,51 @@
             <span>COMPOUND</span>
         </router-link>
         <ul class="navbar-nav">
-            <router-link class="nav-item" tag="li" to="/" exact>
-                <a class="nav-link">TALENT</a>
+            <template v-if="thisRoute == '/'">
+                <router-link class="nav-item" tag="li" to="/" exact>
+                    <a class="nav-link">TALENT</a>
+                </router-link>
+                <router-link class="nav-item" tag="li" to="/register" exact>
+                    <a class="nav-link">EMPLOYERS</a>
+                </router-link>
+                <router-link class="nav-item" tag="li" to="/" exact>
+                    <a class="nav-link">ABOUT</a>
+                </router-link>
+                <router-link class="nav-item" tag="li" to="/register" exact>
+                    <a class="nav-link">HOME</a>
+                </router-link>
+            </template>
+            <template v-if="thisRoute == '/dashboard'">
+                <router-link class="nav-item" tag="li" to="/" exact>
+                    <a class="nav-link">HOME</a>
+                </router-link>
+                <router-link class="nav-item" tag="li" to="/register" exact>
+                    <a class="nav-link">PROFILE</a>
+                </router-link>
+                <router-link class="nav-item" tag="li" to="/" exact>
+                    <a class="nav-link">BLOG</a>
+                </router-link>
+                <router-link class="nav-item" tag="li" to="/register" exact>
+                    <a class="nav-link">SETTINGS</a>
+                </router-link>
+            </template>
+            <router-link v-if="thisRoute == '/register'" class="nav-item" tag="li" to="/register" exact>
+                <a class="nav-link">SETTINGS</a>
             </router-link>
-            <router-link class="nav-item" tag="li" to="/register" exact>
-                <a class="nav-link">EMPLOYERS</a>
-            </router-link>
-            <router-link class="nav-item" tag="li" to="/" exact>
-                <a class="nav-link">ABOUT</a>
-            </router-link>
-            <router-link class="nav-item" tag="li" to="/register" exact>
-                <a class="nav-link">HOME</a>
-            </router-link>
-            <router-link class="nav-item special--item" tag="li" to="/register" exact>
-                <a class="nav-link">
-                    <span>SIGNUP</span>
-                </a>
-            </router-link>
+            <template v-if="thisRoute == '/dashboard' || thisRoute == '/register'">
+                <router-link class="nav-item special--item-reverse" tag="li" to="/" exact>
+                    <a class="nav-link">
+                        <span>SIGN OUT</span>
+                    </a>
+                </router-link>
+            </template>
+            <template v-else>
+                <router-link class="nav-item special--item" tag="li" to="/register" exact>
+                    <a class="nav-link">
+                        <span>SIGNUP</span>
+                    </a>
+                </router-link>
+            </template>
         </ul>
     </nav>
 </template>
@@ -30,8 +58,10 @@
         components: {
           poop
         },
-        mounted(){
-            console.log('we are here now vue loader');
+        computed: {
+            thisRoute: function () {
+                return this.$route.path;
+            }
         }
     }
 </script>

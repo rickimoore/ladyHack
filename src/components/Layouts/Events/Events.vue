@@ -1,5 +1,5 @@
 <template>
-    <div class="event-container container">
+    <div class="event-container">
         <div class="event--callout">
             <h1>COMPOUND EVENTS</h1>
             <h2>CHECK OUT OUR EVENTS AND MEET PEOPLE THAT CAN CHANGE YOUR LIFE</h2>

@@ -30,5 +30,14 @@
         color: white!important;
       }
     }
+    .special--item-reverse{
+      height: 75px;
+      width: 150px;
+      @include flex();
+      @include flex-center();
+      span {
+        color: $primary!important;
+      }
+    }
   }
 }

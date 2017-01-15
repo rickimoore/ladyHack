@@ -1,8 +1,13 @@
 <template>
-    <div class="blog">
+    <div class="blog" :class="{'extra-padding': state == 'dashboard'}">
         <div class="blog--callout">
-            <h1>CHECK OUT OUR BLOG</h1>
-            <h2>GET ADVICE, MENTORSHIP, AND MORE!</h2>
+            <template v-if="state =='dashboard'">
+                <h1>RECENT BLOG POSTS</h1>
+            </template>
+            <template v-else>
+                <h1>CHECK OUT OUR BLOG</h1>
+                <h2>GET ADVICE, MENTORSHIP, AND MORE!</h2>
+            </template>
         </div>
         <div class="posts">
             <post v-for="post in posts" :title="post.title" :description="post.description" :image="post.image"></post>
@@ -12,6 +17,7 @@
 <script>
     import post from '../../Elements/Post/post.vue';
     export default{
+        props: ['state'],
         data: function () {
             return {
                 posts: [

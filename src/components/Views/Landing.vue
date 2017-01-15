@@ -2,7 +2,7 @@
     <div id="landing">
         <jumbo></jumbo>
         <event-list></event-list>
-        <blog-posts></blog-posts>
+        <blog-posts state="landing"></blog-posts>
         <about></about>
     </div>
 </template>

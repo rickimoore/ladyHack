@@ -1,5 +1,9 @@
 <template>
     <main class="register">
+        <div class="greeting">
+            <h1>Hello Marta!</h1>
+            <p>Tell us about more about what you are looking for.</p>
+        </div>
         <section class="checkboxes">
             <h4>What area are you most interested in?</h4>
             <div>

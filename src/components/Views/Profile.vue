@@ -28,7 +28,7 @@
                 <span>Email</span>
             </div>
         </section>
-        <section class="interests">
+        <section class="profile-box">
             <div>
                 <i class="fa fa-cog fa-lg"></i>
                 <span>Interested in UX Design, UX Research, Visual/UI Design roles</span>
@@ -40,6 +40,16 @@
             <div class="cities">
                 <span>1. Barcelona, Spain</span>
                 <span>2. Madrid, Spain</span>
+            </div>
+        </section>
+        <section class="profile-box">
+            <div>
+                <i class="fa fa-calendar fa-lg"></i>
+                <span>Interested in UX Design, UX Research, Visual/UI Design roles</span>
+            </div>
+            <div class="location">
+                <i class="fa fa-question fa-lg"></i>
+                <span>Willing to work in or near the following areas:</span>
             </div>
         </section>
     </main>

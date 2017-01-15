@@ -4,22 +4,24 @@
             <img class="screen" src="src/assets/images/stock/stock-jumbo.jpg" alt="laughing image">
             <div class="jumbo--actions">
                 <h1 class="action--callout">
-                    Bridging the gap between young <br> professionals and pursuing their <br> passions.
+                    Compound is bridging the gap between<br>young professionals and<br>helping them pursue their passions.
                 </h1>
-                <router-link class="nav-item" to="/register" exact>
-                    <a class="action--btn">
-                        <button>
-                            Im looking for a project
-                        </button>
-                    </a>
-                </router-link>
-                <router-link class="nav-item" to="/register" exact>
-                    <a class="action--btn">
-                        <button>
-                            Im looking for people
-                        </button>
-                    </a>
-                </router-link>
+                <div class="action--btns">
+                    <router-link class="nav-item" to="/register" exact>
+                        <a class="action--btn">
+                            <button class="large">
+                                Im looking for a project
+                            </button>
+                        </a>
+                    </router-link>
+                    <router-link class="nav-item" to="/register" exact>
+                        <a class="action--btn">
+                            <button class="large secondary">
+                                Im looking for people
+                            </button>
+                        </a>
+                    </router-link>
+                </div>
             </div>
         </div>
     </div>

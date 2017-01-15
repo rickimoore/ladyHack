@@ -17,6 +17,9 @@ export const router = new VueRouter({
   linkActiveClass: 'active'
 });
 
+const body = document.querySelector('body');
+body.style.background = window.location.pathname.includes('register') ? '#e0f5f5' : '#fff';
+
 export const App = new Vue({
   router,
   components: {

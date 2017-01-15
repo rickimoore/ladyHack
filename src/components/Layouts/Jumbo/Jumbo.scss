@@ -1,9 +1,9 @@
 .jumbo{
-  padding: 2%;
+  padding: 0 25px 25px 25px;
   width: 100%;
-  margin-bottom: 2%;
+  margin-bottom: 25px;
   .jumbo--screen{
-    height: 700px;
+    height: 100vh;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -16,10 +16,18 @@
         background: darken(#65cccc, 50%);
       }
     }
+    .action--btns {
+      align-self: flex-end;
+      > * + * {
+        margin-left: .75rem;
+      }
+    }
     .jumbo--actions{
       position: absolute;
+      display: flex;
+      flex-direction: column;
       top: 40%;
-      left: 10%;
+      left: 7%;
       z-index: 99;
       .action--btn{
         color: inherit;

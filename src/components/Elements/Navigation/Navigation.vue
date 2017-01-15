@@ -22,7 +22,7 @@
                 <router-link class="nav-item" tag="li" to="/" exact>
                     <a class="nav-link">HOME</a>
                 </router-link>
-                <router-link class="nav-item" tag="li" to="/register" exact>
+                <router-link class="nav-item" tag="li" to="/profile" exact>
                     <a class="nav-link">PROFILE</a>
                 </router-link>
                 <router-link class="nav-item" tag="li" to="/" exact>
@@ -45,7 +45,7 @@
             <template v-else>
                 <router-link class="nav-item special--item" tag="li" to="/register" exact>
                     <a class="nav-link">
-                        <span>SIGNUP</span>
+                        <span>SIGN UP</span>
                     </a>
                 </router-link>
             </template>

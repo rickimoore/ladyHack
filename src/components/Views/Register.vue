@@ -29,14 +29,14 @@
             <div>
                 <div class="tags-container">
                     <input type="text" v-model="tagInput" @keyup.enter="addTag">
-                    <button>Add</button>
+                    <button class="secondary hasBorder">Add</button>
                 </div>
                 <div class="tags" v-show="tags.length > 0">
                     <span class="tag" v-for="(tag, index) in tags">{{tag}}</span>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="next-container">
             <div class="next">
                 <router-link to="/dashboard" exact>
                     <button>next</button>

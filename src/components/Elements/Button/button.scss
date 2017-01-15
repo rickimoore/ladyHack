@@ -28,4 +28,20 @@ button {
     &:active {
         border: none;
     }
+
+    &.secondary {
+        background: #fff;
+        color: $primary;
+
+    }
+
+    &.hasBorder {
+        border: 1px solid $primary;
+    }
+
+    &.large {
+        padding: 1.05rem 1.35rem;
+        border: none;
+        font-weight: normal;
+    }
 }

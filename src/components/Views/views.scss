@@ -1,9 +1,18 @@
-.register{
+.container {
+    height: 100%;
+}
+
+.register,
+.profile {
+    padding-top: 4rem;
+    height: 100%;
     background: $body-bg;
 }
+
 #app, #landing, .content{
     @include cover();
 }
+
 section {
     margin: 0 auto;
     max-width: 650px;

@@ -18,7 +18,7 @@ export const router = new VueRouter({
 });
 
 const body = document.querySelector('body');
-body.style.background = window.location.pathname.includes('register') || window.location.pathname.includes('profile') ? '#e0f5f5' : '#fff';
+body.style.background = window.location.pathname.includes('register') ? '#e0f5f5' : '#fff';
 
 export const App = new Vue({
   router,

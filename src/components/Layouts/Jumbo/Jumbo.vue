@@ -10,14 +10,14 @@
                     <router-link class="nav-item" to="/register" exact>
                         <a class="action--btn">
                             <button class="large">
-                                Im looking for a project
+                                I'm looking for a project
                             </button>
                         </a>
                     </router-link>
                     <router-link class="nav-item" to="/register" exact>
                         <a class="action--btn">
                             <button class="large secondary">
-                                Im looking for people
+                                I'm looking for people
                             </button>
                         </a>
                     </router-link>

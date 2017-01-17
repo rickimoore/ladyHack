@@ -24,7 +24,7 @@
                     {
                         title: 'Strategic Planning Made Easy',
                         description: 'Lorem ipsum dolor sit amet, vim enim mollis cu, eu dolores vivendum tractatos duo. Tantas ocurreret',
-                        image: 'src/assets/images/stock/stock-event.jpg'
+                        image: 'src/assets/images/stock/stock-jump.jpg'
                     },
                     {
                         title: 'How To Be Effecient In An Interview',

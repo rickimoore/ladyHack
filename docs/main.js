@@ -6,8 +6,8 @@ import Navigation from 'components/Elements/Navigation/Navigation.vue';
 Vue.use(VueRouter);
 Vue.use(VueResource);
 
-import routes from 'src/routes';
-import 'src/style.scss';
+import routes from 'docs/routes';
+import 'docs/style.scss';
 
 export const LoadingState = new Vue();
 

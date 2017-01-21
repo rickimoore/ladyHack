@@ -10,12 +10,12 @@
 
 
 //Project Elements
-@import "components/Elements/Checkbox/checkbox.scss";
-@import "components/Elements/Post/Post.scss";
+@import "components/Elements/Checkbox/checkbox";
+@import "components/Elements/Post/Post";
 
 //Project Layouts
-@import "components/Layouts/Posts.scss";
+@import "components/Layouts/Posts";
 
-@import "components/Elements/Button/button.scss";
+@import "../src/components/Elements/Button/button.scss";
 
-@import "components/Views/views.scss";
+@import "components/Views/views";

@@ -1,0 +1,12 @@
+.checkbox {
+    display: inline-block;
+    padding: .5rem 1rem;
+    user-select: none;
+    background: #fff;
+    text-align: center;
+}
+
+.is-checked {
+    color: #fff;
+    background: #71adad;
+}
